@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Responsive Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            height: 80px;
+            align-items: center;
+            background-color: bisque;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+        ul li{
+            padding: 10px;
+        }
+        ul li:hover{
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: darkslategray;
+        }
+        ul li a{
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+        ul li:hover a{
+            color: white;
+        }
+        #hamburger, ul label{
+                display: none;
+            }
+        @media screen and (max-width:480px) {
+            
+            nav label:after{
+                content: "\2630";
+            }
+            nav label{
+                font-size: 30px;
+            }
+            #hamburger:checked + ul{
+                display: block;
+            }
+            
+            ul{
+                position: absolute;
+                left: 0;
+                top: 70px;
+                background-color: darkslategrey;
+                height: 150px;
+                display: none;
+                width: 100%;
+                text-align: center;
+            }
+            ul li:hover{
+                background-color: bisque;
+                color: darkslategrey;
+            }
+            ul li a{
+                width: 100%;
+            }
+            ul li:hover a{
+                color: darkslategrey;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <label for="hamburger"></label>
+        <input type="checkbox" id="hamburger">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

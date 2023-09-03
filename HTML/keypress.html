@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="i1" onkeyup="nextInput(event)" maxlength="1" />
+    <input id="i2" onkeyup="nextInput(event)" maxlength="1" />
+    <input id="i3" onkeyup="nextInput(event)" maxlength="1" />
+    <input id="i4" onkeyup="nextInput(event)" maxlength="1" />
+    <input id="i5" onkeyup="nextInput(event)" maxlength="1" />
+    <script>
+      document.getElementById("i1").focus().select();
+      function nextInput(event) {
+        let id = event.target.id;
+        id = +id.toString().replace("i", "");
+        id++;
+
+        if (id === 6) id = 1;
+        const el = document.getElementById("i" + id);
+        el.focus();
+        el.select();
+      }
+    </script>
+  </body>
+</html>

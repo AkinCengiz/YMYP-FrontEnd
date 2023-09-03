@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS - Form</title>
+  </head>
+  <body>
+    <form onsubmit="save(event)">
+      <input type="text" required minlength="3" />
+      <button type="submit">Show</button>
+    </form>
+    <!-- <input onkeyup="writeToConsoleInputValue()"> -->
+    <ul id="list"></ul>
+
+    <script>
+      // function writeToConsoleInputValue(){
+      //     const element = document.querySelector("input");
+      //     console.log(element.value);
+      // }
+        const liste = [];
+      function save(event) {
+        event.preventDefault();
+        const inputElement = document.querySelector("input");
+
+        //const ulElement = document.getElementById("list");
+        // ulElement.innerHTML += "<li>" + inputElement.value + "</li>";
+
+        const ulElement = document.getElementById("list");
+        // const liElement = document.createElement("li");
+        // liElement.innerText = inputElement.value;
+        ulElement.innerHTML += `
+        <li id='li${number}'>
+            ${inputElement.value}
+            <button onclick='deleteElement("li${number}")'>Sil</button></li>
+        `
+            number++;
+        ulElement.append(liElement);
+        inputElement.value = "";
+        inputElement.focus();
+      }
+      function writeToConsoleInputValue(event) {
+        event.preventDefault();
+        const inputElement = document.querySelector("input");
+        const element = document.querySelector("input");
+        console.log(element.value);
+        // console.log(event);
+      }
+    </script>
+  </body>
+</html>

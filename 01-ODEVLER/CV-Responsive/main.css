@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.row{
+    width: 100%;
+}
+/* HEADER */
+#personal-informations{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#personal-img{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#personal-img img{
+    width: 60%;
+    border-radius: 50%;
+}
+
+#personal-info{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+
+
+#personal-informations ul{
+    list-style-type: none;
+    margin: 0.3rem;
+    padding: 0.3rem;
+}
+
+#personal-informations ul li{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0.2rem;
+    padding: 0.2rem;
+}
+#personal-informations ul li i{
+    display: inline-block;
+    width: 20px;
+    margin: 0.2rem;
+    text-align: center;
+}
+
+#personal-informations ul li span{
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+}
+#skills, #languages{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+/* MAIN */
+#general-informations{
+    width: 75%;
+}
+.main-header{
+    margin: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* PROFİLE SECTION */
+#general-informations section{
+    margin: 0.5rem;
+}
+#profile-desc{
+    text-align: justify;
+    padding: 0.5rem;
+}
+.experience-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.experience-info, .education-info{
+    padding: 0.5rem;
+}
+.experience-info .info-list, .education-info .info-list{
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.2rem;
+}
+.experience-info .info-list .info-list-item{
+    margin-left: 1.5rem;
+    padding: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.education-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.education-info .info-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reference-header, .reference-contact{
+    padding: 0.5rem;
+}
+.reference-contact{
+    display: flex;
+    margin: 0.2rem;
+}
+.reference-contact .contact-item{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.2rem;
+}
+.contact-item i{
+    display: inline-block;
+    width: 20px;
+    margin: 0.75rem;
+    text-align: center;
+}
+.contact-item span{
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
+    margin-right: 1rem;
+}

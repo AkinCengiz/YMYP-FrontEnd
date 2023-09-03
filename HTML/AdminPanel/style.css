@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+display: flex;
+color: white;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(black,red);
+}
+.container {
+border: 1px solid silver;
+border-radius: 8px;
+}
+.head{
+text-align: center;
+border-top-right-radius:8px;
+border-top-left-radius: 8px;
+color: white;
+padding: 15px;
+margin: 5px;
+}
+.body{
+padding: 15px;
+}
+input{
+width: 100%;
+font-size: large;
+padding: 5px;
+padding-left: 10px;
+border-radius: 8px;
+}
+input[type="checkbox"]{
+margin-left: 0;
+width: auto;
+}
+.check{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.mt{
+margin-top: 8px;
+}
+button{
+width: 100%;
+padding: 8px;
+color: white;
+border-radius: 8px;
+background-color: cadetblue;
+border-color: cadetblue;
+cursor: pointer;
+outline: none
+}
+button:hover{
+background-color: white;
+color: cadetblue;
+}
+.signup a{
+float: right;
+}

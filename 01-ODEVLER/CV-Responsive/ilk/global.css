@@ -1,0 +1,17 @@
+.bg-primary{
+    background-color: #0F3669;
+}
+.text-white{
+    color: #fff;
+}
+.text-primary{
+    color: #0F3669;
+}
+.fa-csharp:after{
+    
+    content: "C#";
+    font-weight: bold;
+    font-style: normal;
+    width: 1.25rem;
+    justify-content: center;
+}

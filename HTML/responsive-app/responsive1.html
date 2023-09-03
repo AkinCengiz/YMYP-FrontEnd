@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col{
+            float: left;
+            border: 1px solid white;
+            width: 25%;
+            background-color: red;
+            height: 50px;
+        }
+        @media screen and (max-width:900px) {
+            .col{
+                width: 50%;
+            }   
+        }
+        @media screen and (max-width:480px) {
+            .col{
+                width: 100%;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum excepturi ullam quibusdam aliquid eligendi sed quia omnis ipsa aperiam delectus reiciendis, ducimus deserunt ex dolorum sit harum repellat accusantium nam. Dolores fugiat nostrum libero expedita tempore aperiam, qui reprehenderit animi dolorem maiores. Tenetur est dolorem molestiae magnam blanditiis non sequi?</p>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis voluptates esse debitis qui inventore, quidem molestiae numquam natus consequatur. Impedit beatae velit culpa nulla consectetur facere asperiores, nostrum, cum voluptates recusandae dolorum odit consequatur dolorem numquam animi iusto exercitationem incidunt. Est eum fugit repudiandae assumenda adipisci, dolor ea quidem esse!</p>
+</body>
+</html>

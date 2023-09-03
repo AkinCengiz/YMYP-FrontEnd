@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: blueviolet;
+    align-items: center;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+}
+.dropdown-child{
+    display: none;
+    background-color: blueviolet;
+}
+.dropdown-child ul{
+    list-style: none;
+}
+
+.dropdown-child ul li{
+    display: inline-block;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+.dropdown-child ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 1s;
+}
+.dropdown:hover .dropdown-child{
+    display: block;
+    position:absolute;
+    z-index: 1;
+}
+.dropdown-child ul li:hover {
+    background-color: aquamarine;
+}
+
+.dropdown-child ul li:hover a{
+    color: blueviolet;
+}
+.logo{
+    background-color: transparent;
+}
+.profile-img, .logo{
+    width: 50px;
+    border-radius: 50%;
+}
+.sidebar{
+    position: relative;
+    width: 15%;
+    height: 92vh;
+    float: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.sidebar-header{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 20px;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li{
+    padding: 10px;
+    border-bottom: 1px solid blueviolet;
+}
+.sidebar ul li:hover{
+    background-color: aquamarine;
+}
+.sidebar ul li a{
+    text-decoration: none;
+}
+.tablet{
+    display: none;
+}
+.content
+{
+    width: 85%;
+    float: right;
+    padding: 10px;
+}
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.content-body{
+    border: 1px solid silver;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.sidebar label{
+    display: none;
+}
+#checkbox{
+    display: none;
+}
+@media screen and (max-width:780px) {
+    nav h1{
+        display: none;
+    }
+    .sidebar{
+        display: block;
+        width: 100%;
+    }
+    .sidebar-header{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .sidebar label:after{
+        content: "\2630";
+    }
+    .sidebar label{
+        position:fixed;
+        top: 15px;
+        right: 5px;
+        display: inline-block;
+        font-size: 30px;
+    }
+    .checkbox:checked + ul{
+        display: block;
+    }
+    
+    .sidebar ul{
+        position: absolute;
+        left: 0;
+        top: 100px;
+        background-color: blueviolet;
+        height: 150px;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    ul li:hover{
+        background-color: bisque;
+        color: darkslategrey;
+    }
+    ul li a{
+        width: 100%;
+    }
+    ul li:hover a{
+        color: darkslategrey;
+
+    }
+}

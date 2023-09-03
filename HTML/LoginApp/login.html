@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+background: linear-gradient(black,red);
+}
+.container {
+border: 1px solid silver;
+border-radius: 8px;
+}
+.head{
+text-align: center;
+border-top-right-radius:8px;
+border-top-left-radius: 8px;
+color: white;
+padding: 15px;
+margin: 5px;
+}
+.body{
+padding: 15px;
+}
+input{
+width: 100%;
+font-size: large;
+padding: 5px;
+padding-left: 10px;
+border-radius: 8px;
+}
+input[type="checkbox"]{
+margin-left: 0;
+width: auto;
+}
+.check{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+.mt{
+margin-top: 8px;
+}
+button{
+width: 100%;
+padding: 8px;
+color: white;
+border-radius: 8px;
+background-color: cadetblue;
+border-color: cadetblue;
+cursor: pointer;
+outline: none
+}
+button:hover{
+background-color: white;
+color: cadetblue;
+}
+.signup a{
+float: right;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>Login Page</h1>
+      </div>
+      <div class="body">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="mt">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div class="mt check">
+          <input type="checkbox" name="rememberMe" id="rememberMe" />
+          <label for="rememberMe">Remember Me</label>
+        </div>
+        <div class="mt">
+            <button>Sing In</button>
+          </div>
+          <div class="mt signup">
+            <a href="#">Haven't you're account? Sing Up!</a>
+          </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

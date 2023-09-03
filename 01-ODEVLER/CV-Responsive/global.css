@@ -1,0 +1,61 @@
+/*TEXT CSS*/
+.text-center{
+    text-align: center;
+}
+
+.heading-small{
+    font-size: 1.25rem;
+}
+.heading-medium{
+    font-size: 1.5rem;
+}
+.heading-large{
+    font-size: 1.75rem;
+}
+
+/* Background and Text Color */ 
+
+.bg-dark-blue{
+    background-color: #0F3669;
+}
+
+.text-light{
+    color: #fff;
+}
+.text-dark-blue{
+    color: #0F3669;
+}
+
+.fa-csharp:after{
+    content: "C#";
+    font-size: 1.25em;
+    line-height: 0.25em;
+    vertical-align: -0.075em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*HORIZINTAL ROW*/
+.hr-line-light:after{
+    display: block;
+    content:"";
+    border-bottom: 1px solid #fff;
+}
+.hr-line-dark-blue:after{
+    display: block;
+    content:"";
+    border-bottom: 1px solid #0f3669;
+}
+
+/* COLUMN */
+.col-6{
+    width: 50%;
+}
+.col-4{
+    width: 37.5%;
+}
+.col-2{
+    width: 12.5%;
+}
+
+/* MARGIN & PADDING */

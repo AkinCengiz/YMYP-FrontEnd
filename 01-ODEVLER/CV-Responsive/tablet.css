@@ -1,0 +1,27 @@
+.container{
+    flex-direction: column;
+}
+#personal-informations{
+    width: 100%;
+}
+#general-informations{
+    width: 100%;
+}
+.experience-header{
+    flex-direction: column;
+}
+.education-header{
+    flex-direction: column;
+}
+
+.education-info .info-list{
+    flex-direction: column;
+}
+.col-6, .col-4, .col-2{
+    width: 100%;
+}
+
+.reference-contact{
+    flex-direction: column;
+
+}
