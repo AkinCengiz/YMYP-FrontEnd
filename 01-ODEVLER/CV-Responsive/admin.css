@@ -14,11 +14,8 @@ a{
     margin: 0 auto;
     
 }
-.row{
-    width: 100%;
-}
 /* HEADER */
-#personal-informations{
+#menu-header{
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -35,31 +32,37 @@ a{
     border-radius: 50%;
 }
 
-#personal-info{
+#menu{
     margin: 0.5rem;
     padding: 0.5rem;
 }
 
-#personal-informations ul{
+
+#menu-header ul{
     list-style-type: none;
     margin: 0.3rem;
     padding: 0.3rem;
 }
 
-#personal-informations ul li{
-    display: flex;
-    justify-content: space-between;
+#menu-header ul li{
+    
+    
     margin: .5rem 0.2rem;
     padding: 0.2rem;
 }
-#personal-informations ul li i{
+#menu-header ul li a{
+    display: flex;
+    justify-content: flex-start;
+}
+#menu-header ul li i{
     display: inline-block;
     width: 20px;
     margin: 0.2rem;
     text-align: center;
 }
 
-#personal-informations ul li span{
+#menu-header ul li span{
+    margin-left: 0.5rem;
     display: inline-block;
     font-size: 1rem;
     padding-bottom: 0.4rem;
@@ -73,9 +76,14 @@ a{
 #general-informations{
     width: 75%;
 }
-.main-header{
+#main-header{
     margin: 0.5rem;
     margin-top: 2rem;
+}
+.form-box{
+    width: 100%;
+    border: 1px solid #0F3669;
+    padding: 0.5rem;
 }
 
 /* PROFİLE SECTION */
@@ -86,6 +94,15 @@ a{
     text-align: justify;
     padding: 0.5rem;
 }
+#date-info{
+    display: flex;
+    justify-content: space-between;
+
+}
+.date-part{
+    width: 48%;
+}
+
 .experience-header{
     display: flex;
     justify-content: space-between;

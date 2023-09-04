@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="tablet.css">
+    <link rel="stylesheet" media="(max-width:480px)" href="mobile.css">    
+    <link rel="stylesheet" media="print" href="print.css">
+</head>
+<body>
+    <div class="container">
+        <header id="menu-header" class="bg-dark-blue">
+            <div id="personal-img" class="row">
+                <img src="akincengiz.jpg" alt="Akın CENGİZ">
+            </div>
+            <nav id="menu" class="text-light row">
+                <h2 class="heading-medium hr-line-light">Kişisel Bilgiler</h2>
+                <ul>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-heading "></i><span>Başlık</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-id-card"></i><span>Kişisel Bilgiler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-code"></i><span>Yetenekler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-language"></i><span>Yabancı Diller</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-user"></i><span>Profil</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-box-open"></i><span>Deneyimler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-graduation-cap"></i><span>Eğitimler</span></a></li>
+                    <li><a href="#" class="text-light"><i class="fa-solid fa-people-arrows"></i><span>Referanslar</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="general-informations">
+            <section id="main-header row">
+                <article id="heading-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Başlık Bilgileri</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title" class="form-control">Başlık</label>
+                            <input type="text" name="title" id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="degree" class="form-control">Ünvan</label>
+                            <input type="text" name="degree" id="degree" class="form-control">
+                        </div>
+                        <a href="#" class="btn btn-primary">Kaydet</a>
+                    </form>
+                </article>
+            </section>
+            <section id="main-profile row">
+                <article id="profile-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Profil Bilgileri</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="about" class="form-control">Açıklama</label>
+                            <input type="text" name="about" id="about" class="form-control">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section id="main-experience row">
+                <article id="experience-form" class="form-box">
+                    <h2 class="heading-medium text-dark-blue hr-line-dark-blue">İş Deneyimleri</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="title" class="form-control">Başlık</label>
+                            <input type="text" name="title" id="title" class="form-control">
+                        </div>
+                        <div id="date-info" class="form-group">
+                            <div class="date-part">
+                                <label for="start-date" class="form-control">Başlangıç Tarihi</label>
+                                <input type="month" name="start-date" id="start-date" class="form-control">
+                            </div>
+                            <div class="date-part">
+                                <label for="end-date" class="form-control">Bitiş Tarihi</label>
+                                <input type="month" name="end-date" id="end-date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company-name" class="form-control">Çalıştığı Kurum / Şirket</label>
+                            <input type="text" name="company-name" id="company-name" class="form-control">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section id="experiences" class="row">
+                <h2 class="heading-medium text-dark-blue hr-line-dark-blue">İş Deneyimleri</h2>
+                <article class="experience-item">
+                    <div class="experience-header row">
+                        <h3 class="experince-title heading-small">Yazılım Uzmanı</h3>
+                        <span class="experince-date">Haziran 2008 - Devam Ediyor</span>
+                    </div>
+                    <div class="experience-info row">
+                        <ul class="info-list">Kağıthane Belediyesi - Fen İşleri Müdürlüğü
+                            <li class="info-list-item">Personel Takip</li>
+                            <li class="info-list-item">Günlük, aylık ve yıllık faaliyet raporları</li>
+                            <li class="info-list-item">Veri Analizi</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header row">
+                        <h3 class="experince-title heading-small">Fabrika Müdür Asistanı</h3>
+                        <span class="experince-date">Ocak 2003 - Eylül 2005</span>
+                    </div>
+                    <div class="experience-info row">
+                        <ul class="info-list">GEMAŞ Genel Mühendislik
+                            <li class="info-list-item">Kalite Kontrol Sorumluluğu</li>
+                            <li class="info-list-item">Ürün Maliyet Hesaplamaları</li>
+                            <li class="info-list-item">ISO Kalite Belge Yönetimi</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="educations" class="row">
+                <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Eğitimler</h2>
+                <article class="education-item">
+                    <div class="education-header row">
+                        <h3 class="education-title heading-small">Bilgisayar Mühendisliği - Lisans</h3>
+                        <span class="education-date">Eylül 2022 - Devam Ediyor</span>
+                    </div>
+                    <div class="education-info row">                        
+                        <ul class="info-list">
+                            <li class="info-list-item col-6"><h4>Hoca Ahmet Yesevi Üniversitesi</h4></li>
+                            <li class="info-list-item col-4">Mühendislik Fakültesi</li>
+                            <li class="info-list-item col-2">GNO : 3,30</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="education-item">
+                    <div class="education-header row">
+                        <h3 class="education-title heading-small">Yönetim Bilişim Sistemleri - Lisans</h3>
+                        <span class="education-date">Eylül 2018 - Haziran 2020</span>
+                    </div>
+                    <div class="education-info row">                        
+                        <ul class="info-list">
+                            <li class="info-list-item col-6"><h4>Anadolu Üniversitesi</h4></li>
+                            <li class="info-list-item col-4">Açıköğretim Fakültesi</li>
+                            <li class="info-list-item col-2">GNO : 3,30</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="education-item">
+                    <div class="education-header row">
+                        <h3 class="education-title heading-small">Bilgisayar Programcılığı - Önlisans</h3>
+                        <span class="education-date">Eylül 2016 - Haziran 2018</span>
+                    </div>
+                    <div class="education-info row">                        
+                        <ul class="info-list">
+                            <li class="info-list-item col-6"><h4>Sakarya Üniversitesi</h4></li>
+                            <li class="info-list-item col-4">Adapazarı Meslek Yüksekolulu</li>
+                            <li class="info-list-item col-2">GNO : 3,30</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section id="references" class="row">
+                <h2 class="heading-medium text-dark-blue hr-line-dark-blue">Referanslar</h2>
+                <article class="reference">
+                    <div class="reference-header row">
+                        <h4 class="heading-small">Hüseyin AYRILMAK</h4>
+                        <p>Kağıthane Belediyesi - Ruhsat ve Denetim Müdürü</p>
+                    </div>
+                    <div class="reference-contact">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-mobile-screen fa-lg"></i><span>(534) 018 33 30</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope fa-lg"></i><span>huseyin.ayrilmak@kagithane.bel.tr</span>
+                        </div>
+                    </div>                    
+                </article>
+                <article class="reference">
+                    <div class="reference-header row">
+                        <h4 class="heading-small">Lorem, ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="reference-contact">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-mobile-screen fa-lg"></i><span>(999) 999 99 99</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope fa-lg"></i><span>Lorem@ipsum.com</span>
+                        </div>                        
+                    </div>                    
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
