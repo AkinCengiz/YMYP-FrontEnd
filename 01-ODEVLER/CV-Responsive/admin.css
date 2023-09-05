@@ -20,6 +20,9 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    position: relative;
+    vertical-align: middle;
 }
 
 #personal-img{

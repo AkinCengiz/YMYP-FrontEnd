@@ -18,13 +18,23 @@ a{
     width: 100%;
 }
 /* HEADER */
+
 #personal-informations{
     width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+#edit-page{
+    width: 100%;
+    position: relative;
+}
+#edit-page a{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: #fff;
+}
 #personal-img{
     text-align: center;
     margin-top: 3rem;

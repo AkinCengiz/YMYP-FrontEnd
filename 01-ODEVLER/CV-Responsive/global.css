@@ -68,10 +68,10 @@
 
 /*BUTTONS*/
 .btn{
-    font-size: 1.25rem;
+    font-size: .75rem;
     display: inline-block;
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
     text-align: center;
 }
 .btn-primary{
@@ -83,6 +83,72 @@
     background-color: #fff;
     color: #0F3669;
     border: 1px solid #0F3669;
+    border-radius: .25rem;
+}
+.btn-success{
+    background-color: #28a745;
+    color: #fff;
+    border-radius: .25rem;
+}
+.btn-success-outline{
+    background-color: #fff;
+    color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: .25rem;
+}
+.btn-danger{
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: .25rem;
+}
+.btn-danger-outline{
+    background-color: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: .25rem;
+}
+.btn-warning{
+    background-color: #ffc107;
+    color: #fff;
+    border-radius: .25rem;
+}
+.btn-warning-outline{
+    background-color: #fff;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+    border-radius: .25rem;
+}
+.btn-info{
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: .25rem;
+}
+.btn-info-outline{
+    background-color: #fff;
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
+    border-radius: .25rem;
+}
+.btn-secondary{
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: .25rem;
+}
+.btn-secondary-outline{
+    background-color: #fff;
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
+    border-radius: .25rem;
+}
+.btn-dark{
+    background-color: #17a2b8;
+    color: #fff;
+    border-radius: .25rem;
+}
+.btn-dark-outline{
+    background-color: #fff;
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
     border-radius: .25rem;
 }
 
@@ -98,4 +164,22 @@
 .form-control{
     width: 100%;
     font-size: 1.25rem;
+}
+
+.table-container{
+    width: 100%;
+    padding-right: 0.5rem;
+}
+.table-bordered{
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #0F3669;
+    border-collapse: collapse;
+    
+}
+
+.table-bordered th, .table-bordered td{
+    border: 1px solid #0F3669;
+    padding: 0.2rem;
 }
